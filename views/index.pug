@@ -1,0 +1,15 @@
+h2 Add files to the server
+div
+    form(action="/characters/crud/create", method="post", enctype="multipart/form-data")
+        label Image File
+        input(type="file", name="picture")
+        p name:
+            input(type="text" name="name" placeholder="Type name")
+        p age:
+            input(type="text" name="age" placeholder="Type age")
+        p weight:
+            input(type="text" name="weight" placeholder="Type weight")
+        p history :
+            input(type="text" name="history" placeholder="Type weight")
+
+        input(type="submit", value="Send")
